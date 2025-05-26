@@ -1,0 +1,8 @@
+@import "tailwindcss";
+.scroll-offset {
+  scroll-margin-top: 40px; /* or however tall your header is */
+}
+body {
+  background-color: 
+#d0eca6;
+}

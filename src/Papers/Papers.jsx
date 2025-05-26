@@ -1,0 +1,63 @@
+// src/components/Papers.jsx
+import tree3 from '../assets/tree3.png';
+export default function Papers() {
+  const papers = [
+    {
+      title: 'Cloud-Edge Continuum Computing with Kubernetes Deployment',
+      summary:
+        'This project explores how to deploy real-time applications across a cloud–MEC–edge continuum using Kubernetes, Docker, and AWS Wavelength. I built a distributed microservice pipeline for audio processing, where different tasks like Text-to-Speech, profanity detection, and audio compression are handled at different layers (edge, MEC, cloud) depending on latency and resource needs. The result was a fully working system that shows how edge computing can be used for fast and scalable processing in real-world setups.',
+      tech: ['Kubernetes', 'Docker', 'Terraform', 'MQTT', 'Edge Computing', 'AWS'],
+      file: '/Cloud_Edge_Continuum_Computing_with_Kubernetes_Deployment.pdf',
+    },
+    {
+      title: 'Physiological Illusion Detection: The Thatcher Effect',
+      summary:
+        'We trained a convolutional neural network to recognize Thatcherized faces — a famous visual illusion where facial features flipped upside down look normal until the face is upright. We generated a custom dataset, ran a human survey for comparison, and achieved ~85% detection accuracy with our model. This showed that AI can match human perception in detecting certain visual illusions — and even outperform it in tricky cases.',
+      tech: ['CNN', 'Dlib', 'Computer Vision'],
+      file: '/CS4442_Final_Project_Report.pdf',
+    },
+  ];
+
+  return (
+
+
+
+
+
+      <div id="papers" className='max-w-4xl mx-auto flex flex-col space-y-12 px-4 py-16 '>
+        <img src={tree3} alt="" className="absolute object-contain left-0 -z-1 w-dvw" />
+        <div className="d-dvh  flex flex-col items-center gap-6 bg-white shadow-md rounded-lg p-6">
+                  <h2 className="text-3xl font-bold mb-8 text-center">📄 (Unpublished) Papers & Research</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {papers.map((paper, index) => (
+          <div
+            key={index}
+            className="p-6 rounded-xl shadow bg-white border border-gray-200 space-y-4"
+          >
+            <h3 className="text-xl font-semibold">{paper.title}</h3>
+            <p className="text-sm text-gray-700">{paper.summary}</p>
+            <div className="text-xs text-gray-500 flex flex-wrap gap-2">
+              {paper.tech.map((tag, i) => (
+                <span
+                  key={i}
+                  className="px-2 py-1 bg-gray-100 rounded-full text-xs font-medium"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+            <a
+              href={paper.file}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-blue-600 hover:text-blue-800 underline text-sm"
+            >
+              View Paper →
+            </a>
+          </div>
+        ))}
+      </div>
+        </div>
+    </div>
+  );
+}
