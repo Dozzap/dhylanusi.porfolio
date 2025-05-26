@@ -4,10 +4,10 @@ import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 function Contact() {
   return (
 
-    <div id="contact" className="max-w-3xl mx-auto px-4 py-16">
+    <div id="contact" className="w-2/3 flex flex-col space-y-12 px-8 py-16 my-16 bg-gray-600 ">
       <h2 className="text-3xl font-bold text-center mb-8">📬 Contact Me</h2>
 
-      <div className="flex justify-center gap-8 mb-12 text-3xl text-gray-700">
+      <div className="flex flow-row justify-center gap-8 mb-12 text-3xl text-gray-700">
         <a
           href="https://linkedin.com/in/yourusername"
           target="_blank"
@@ -33,7 +33,8 @@ function Contact() {
       </div>
 
 
-      <form className="space-y-6 bg-white shadow-md p-8 rounded-xl border">
+      <form className="w-full space-y-6 bg-white shadow-md p-8 rounded-xl border justify-center items-center">
+        <div className="font-bold  mb-8">Got A Burning Question?</div>
         <div>
           <label className="block text-sm font-medium text-gray-700">Name</label>
           <input

@@ -3,7 +3,7 @@ import wcslogobanner from '../assets/wcslogobanner.png';
 import tree2 from '../assets/tree2.png'
 function Experience() {
   return (
-     <div className='max-w-4xl mx-auto flex flex-col space-y-12 px-4 py-16 '>
+     <div className='w-2/3 flex flex-col space-y-12 px-8 py-16 my-16 bg-gray-600 '>
            <img src={tree2} alt="" className="absolute object-contain left-0 -z-1 w-dvw" />
     <div id="experience" className="d-dvh  flex flex-col items-center gap-6 bg-white shadow-md rounded-lg p-6">
       <h1 className="text-3xl font-bold text-center mb-12">💼 Experience</h1>

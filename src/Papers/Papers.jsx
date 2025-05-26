@@ -24,7 +24,7 @@ export default function Papers() {
 
 
 
-      <div id="papers" className='max-w-4xl mx-auto flex flex-col space-y-12 px-4 py-16 '>
+      <div id="papers" className='w-2/3 flex flex-col space-y-12 px-8 py-16 my-16 bg-gray-600 '>
         <img src={tree3} alt="" className="absolute object-contain left-0 -z-1 w-dvw" />
         <div className="d-dvh  flex flex-col items-center gap-6 bg-white shadow-md rounded-lg p-6">
                   <h2 className="text-3xl font-bold mb-8 text-center">📄 (Unpublished) Papers & Research</h2>

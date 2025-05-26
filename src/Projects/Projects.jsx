@@ -2,6 +2,8 @@
 import tree2 from '../assets/tree2.png'
 import snake_ from '../assets/snake_.png'
 import janken_ from '../assets/janken_.png'
+import cec from '../assets/cec.png'
+import td_ from '../assets/td_.png'
 function Projects() {
 
     const projects = [
@@ -23,13 +25,15 @@ function Projects() {
       title: "Thatcher Detector & Dataset Generator",
       summary: "Two tools for working with the Thatcher effect in faces. One detects and flags Thatcherized images using OpenCV, the other helps generate custom datasets for training/testing. Great for CV/ML workflows. It’s all modular, cleanly written in Python, and ready to plug into bigger projects.",
       tech: ["Python", "OpenCV", "NumPy"],
-      link: "https://github.com/Dozzap/thatcher-detector"
+      link: "https://github.com/Dozzap/thatcher-detector",
+      image: td_
     },
     {
       title: "Dockerized Python Pipeline Template",
       summary: "A template repo for building and running microservices and data pipelines with Docker. It’s modular, production-ready, and perfect for CI/CD or rapid prototyping. Makes spinning up isolated services way easier.",
       tech: ["Python", "Docker", "Microservices", "DevOps"],
-      link: "https://github.com/Dozzap/General-workflow-docker-implementation"
+      link: "https://github.com/Dozzap/General-workflow-docker-implementation",
+      image:cec
     },
     {
       title: "Squable: Java Wordle Clone",
@@ -41,7 +45,7 @@ function Projects() {
 
 
     return (
-        <div id="projects" className='max-w-5xl mx-auto flex flex-col space-y-12 px-4 py-16'>
+        <div id="projects" className='w-2/3 flex flex-col space-y-12 px-8 py-16 my-16 bg-gray-600 '>
             <h2 className="text-3xl font-bold mb-8 text-center">💻 Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {projects.map((proj, index) => (
@@ -53,7 +57,7 @@ function Projects() {
                             <img
                                 src={proj.image}
                                 alt={`${proj.title} screenshot`}
-                                className="w-full h-40 object-cover rounded-md"
+                                className="project-image w-full h-40 object-cover rounded-md"
                             />
                         )}
                         <h3 className="text-xl font-semibold">{proj.title}</h3>

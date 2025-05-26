@@ -34,12 +34,11 @@ function App() {
   }, []);
 
   return (
-    <div className="w-full">
+    <div className="w-full ">
       <Header />
-      {/* 👋 Welcome Section with Landing Model */}
 
       <div className="flex flex-col">
-        <div ref={welcomeRef} className=" flex  flex-col-reverse sm:flex-row justify-center items-center h-dvh">
+        <div ref={welcomeRef} className=" flex  flex-col-reverse sm:flex-row justify-center items-center h-dvh ">
           <Welcome />
           <AnimatePresence mode="wait">
             {!showCornerModel && (
@@ -60,7 +59,7 @@ function App() {
       </div>
 
       <div className="flex flex-col justify-center items-center z-1 ">
-        <div className="flex flex-col justify-center items-center w-2/3 bg-amber-50" >
+        <div className="flex flex-col justify-center items-center w-2/3 bg-amber-50 rounded-lg " >
           {/* 🎛️ Corner Model Appears When Scrolled */}
           <AnimatePresence>
             {showCornerModel && (
@@ -80,7 +79,7 @@ function App() {
           <Experience />
           <Papers />
           <Projects/>
-            <Contact />
+          <Contact />
         </div>
       </div>
 
