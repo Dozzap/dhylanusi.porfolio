@@ -7,7 +7,7 @@ function Header() {
   };
 
   return (
-    <header className="flex flex-row justify-between items-center bg-gray-800 text-white p-4 px-10 fixed w-full z-10">
+    <header className="flex flex-row text-xs sm:text-xl justify-between items-center bg-gray-800 text-white! p-4 sm:px-10 fixed w-full z-10">
       <h1 className="cursor-pointer" onClick={() => scrollToSection('welcome')}>Liebespace</h1>
       <nav>
         <ul className="flex flex-row justify-between items-center space-x-4">

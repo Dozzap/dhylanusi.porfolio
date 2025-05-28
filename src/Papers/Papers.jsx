@@ -24,40 +24,41 @@ export default function Papers() {
 
 
 
-      <div id="papers" className='w-2/3 flex flex-col space-y-12 px-8 py-16 my-16 bg-gray-600 '>
-        <img src={tree3} alt="" className="absolute object-contain left-0 -z-1 w-dvw" />
-        <div className="d-dvh  flex flex-col items-center gap-6 bg-white shadow-md rounded-lg p-6">
-                  <h2 className="text-3xl font-bold mb-8 text-center">📄 (Unpublished) Papers & Research</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {papers.map((paper, index) => (
-          <div
-            key={index}
-            className="p-6 rounded-xl shadow bg-white border border-gray-200 space-y-4"
-          >
-            <h3 className="text-xl font-semibold">{paper.title}</h3>
-            <p className="text-sm text-gray-700">{paper.summary}</p>
-            <div className="text-xs text-gray-500 flex flex-wrap gap-2">
-              {paper.tech.map((tag, i) => (
-                <span
-                  key={i}
-                  className="px-2 py-1 bg-gray-100 rounded-full text-xs font-medium"
+    <div style={{ backgroundColor: 'var(--color-middle)' }} id="papers" className='rounded-lg w-7/8 sm:w-9/10 flex flex-col space-y-12 px-8 py-16 my-16 bg-gray-600 '>
+      <img src={tree3} alt="" className="absolute object-contain left-0 -z-1 w-dvw rounded-xl" />
+      <div className="border rounded-xl">           
+         <h1 style={{ backgroundColor: 'var(--color-headers)' }} className=" w-full justify-center static text-xl border text-center sm:text-3xl font-bold px-6  mx-auto p-6 rounded-tl-lg rounded-tr-lg">📄 (Unpublished) Papers & Research</h1>
+        <div className="d-dvh  flex flex-col items-center gap-6 bg-white shadow-md p-6 rounded-bl-xl rounded-br-xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {papers.map((paper, index) => (
+              <div
+                key={index}
+                className="p-6 rounded-xl shadow bg-white border border-gray-200 space-y-4"
+              >
+                <h3 className="text-xl font-semibold">{paper.title}</h3>
+                <p className="text-sm text-gray-700">{paper.summary}</p>
+                <div className="text-xs text-gray-500 flex flex-wrap gap-2">
+                  {paper.tech.map((tag, i) => (
+                    <span
+                      key={i}
+                      className="px-2 py-1 bg-gray-100 rounded-full text-xs font-medium"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <a
+                  href={paper.file}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block text-blue-600 hover:text-blue-800 underline text-sm"
                 >
-                  {tag}
-                </span>
-              ))}
-            </div>
-            <a
-              href={paper.file}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-blue-600 hover:text-blue-800 underline text-sm"
-            >
-              View Paper →
-            </a>
+                  View Paper →
+                </a>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-        </div>
+        </div></div>
     </div>
   );
 }

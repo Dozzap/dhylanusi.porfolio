@@ -8,11 +8,9 @@ import Experience from './Experience/Experience.jsx';
 import LandingModel from './Component/LandingModel.jsx';
 import SpinningModelViewer from './Component/SpinningModelViewer.jsx';
 import Papers from './Papers/Papers.jsx';
-import chiikawa_usagi from './assets/chiikawa_usagi.png';
-import grass from './assets/grass.png'
+
 import Contact from './Contact/Contact.jsx';
-import tree from './assets/tree.png';
-import tree2 from './assets/tree2.png'
+
 import Projects from './Projects/Projects.jsx';
 function App() {
   const [showCornerModel, setShowCornerModel] = useState(false);
@@ -34,7 +32,7 @@ function App() {
   }, []);
 
   return (
-    <div className="w-full ">
+    <div className="w-full">
       <Header />
 
       <div className="flex flex-col">
@@ -59,8 +57,8 @@ function App() {
       </div>
 
       <div className="flex flex-col justify-center items-center z-1 ">
-        <div className="flex flex-col justify-center items-center w-2/3 bg-amber-50 rounded-lg " >
-          {/* 🎛️ Corner Model Appears When Scrolled */}
+        <div style={{backgroundColor:'var(--color-outer)' }} className="flex flex-col justify-center items-center w-7/8 sm:w-2/3  rounded-lg mb-10" >
+
           <AnimatePresence>
             {showCornerModel && (
               <motion.div

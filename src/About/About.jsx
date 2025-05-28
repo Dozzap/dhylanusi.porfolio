@@ -2,12 +2,12 @@ import Stacked_Full from '../assets/Stacked_Full.png';
 import tree3 from '../assets/tree3.png'
 function About() {
     return (
-        <div id="about" className="w-2/3 flex flex-col space-y-12 px-8 py-16 my-16 bg-gray-600 ">
+        <div style={{backgroundColor:'var(--color-middle)'}} id="about" className="rounded-lg w-7/8 sm:w-9/10 flex flex-col space-y-12 px-8 py-16 my-16 bg-gray-600 ">
             <img src={tree3} alt="" className="absolute object-fill left-0 -z-1 w-dvw xs:h-dvh" />
-            <div   className="d-dvh  flex flex-col items-center gap-6 bg-white shadow-md rounded-lg p-6">
-                <h1 className=" text-3xl font-bold">👋 About Me</h1>
+            <div   className="d-dvh  flex flex-col items-center gap-6 bg-white shadow-md rounded-xl border ">
+                        <h1 style={{ backgroundColor: 'var(--color-headers)' }} className="w-full justify-center static text-xl border text-center sm:text-3xl font-bold px-6  mx-auto p-6 rounded-tl-lg rounded-tr-lg">👋 About Me</h1>
 
-                <div className="flex flex-col md:flex-row items-center justify-center gap-10 px-6 max-w-5xl mx-auto">
+                <div className="text-xs sm:text-xl flex flex-col-reverse md:flex-row items-center justify-center gap-10 px-6 max-w-5xl mx-auto pb-6">
                     {/* Text section */}
                     <div className="flex-1 text-center md:text-left space-y-4">
                         <p className="text-lg text-gray-700">
@@ -24,7 +24,7 @@ Outside of the tech world, you’ll probably catch me gaming, at the gym, or jum
                         <img
                             src={Stacked_Full}
                             alt="Stacked Full"
-                            className="w-2/3 max-w-md mx-auto rounded-xl"
+                            className="w-2/3 max-w-md mx-auto "
                         />
                     </div>
                 </div>

@@ -1,10 +1,19 @@
 @import "tailwindcss";
+:root {
+  --color-outer: rgba(250,248,240,0.8);
+  --color-middle: rgba(229,228,224,0.9);
+  --color-inner:#D1D0CC ;
+  --color-content: #fdfdfc;
+  --color-headers: #6C5F5B;
+  --color-textCol: #2e2e2e;
+}
 .scroll-offset {
   scroll-margin-top: 40px; /* or however tall your header is */
 }
 body {
   background-color: 
 #d0eca6;
+color:	#3a3a3a;
 }
 
 .project-image{
@@ -15,4 +24,12 @@ body {
   object-fit: contain;  /* shows the full image */
 
     /* transition: all 0.5s ease-in-out; */
+}
+
+div > * {
+  color:#2e2e2e ;
+}
+
+button{
+  background-color:#6C5F5B;
 }

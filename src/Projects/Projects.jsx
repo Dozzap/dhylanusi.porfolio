@@ -45,9 +45,10 @@ function Projects() {
 
 
     return (
-        <div id="projects" className='w-2/3 flex flex-col space-y-12 px-8 py-16 my-16 bg-gray-600 '>
-            <h2 className="text-3xl font-bold mb-8 text-center">💻 Projects</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div style={{backgroundColor:'var(--color-middle)'}}  id="projects" className='rounded-lg w-7/8 sm:w-9/10 flex flex-col space-y-12 px-8 py-16 my-16 bg-gray-600 '>
+            <div className='border rounded-xl '>
+                 <h1 style={{backgroundColor:'var(--color-headers)'}} className="border w-full static text-xl text-center sm:text-3xl font-bold p-4 rounded-tl-xl rounded-tr-xl">💻 Projects</h1>
+            <div style={{backgroundColor:'var(--color-inner)'}} className="rounded-xl p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
                 {projects.map((proj, index) => (
                     <div
                         key={index}
@@ -82,6 +83,7 @@ function Projects() {
                         </a>
                     </div>
                 ))}
+            </div>
             </div>
         </div>
     );
