@@ -13,12 +13,9 @@ function Welcome() {
       <div className="">
         <div style={{backgroundColor:'var(--color-content)'}} className=" flex flex-col justify-around sm:justify-center items-center text-center gap-6  shadow-md rounded-lg p-1 sm:p-6">
           <h1 className="text-xl sm:text-4xl font-bold">Welcome to my site!</h1>
-
-          <div className='flex flex-col'>
-            <div className="flex flex-col space-x-2 text-lg">
-              <div className="flex  flex-col md:flex-row">
-                <div className=" text-sm sm:text-xl px-1">Contact me if you’re looking for a</div>
-
+          <div className='w-full flex flex-col justify-center items-center'>
+                <h1 className=" text-sm sm:text-xl">Reach out to me if you’re looking for a</h1>
+              <div className="w-full items-center justify-center flex relative flex-col md:flex-row">
                 <TypeAnimation
                   sequence={[
                     'Aspiring Developer',
@@ -31,13 +28,13 @@ function Welcome() {
                     1500,
                     () => { },
                   ]}
-                  wrapper="div"
+                  wrapper="h1"
                   cursor={true}
                   repeat={Infinity}
-                  className="text-sm sm:text-xl text-blue-600 font-semibold"
+                  className="text-sm sm:text-xl text-orange-300! font-semibold"
                 /></div>
-            </div>
-            <p className="max-w-md text-gray-600 mt-4">
+
+            <p className="max-w-md text-gray-600 mt-2">
               Here’s where I share what I’m building, learning, and vibing with — from projects to passions.
               Wanna see something cool? Scroll down and explore.
             </p>
