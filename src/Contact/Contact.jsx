@@ -13,7 +13,7 @@ function Contact() {
 
         <div className=" bg-white shadow-md p-8 flex flow-row justify-center gap-8  text-3xl text-gray-700">
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/dhylan-usi/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-600 transition"
@@ -21,7 +21,7 @@ function Contact() {
             <FaLinkedin />
           </a>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/Dozzap"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-black transition"
