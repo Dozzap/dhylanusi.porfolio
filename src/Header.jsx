@@ -11,7 +11,7 @@ function Header() {
       <h1 className="cursor-pointer" onClick={() => scrollToSection('welcome')}>Liebespace</h1>
       <nav>
         <ul className="flex flex-row justify-between items-center space-x-4">
-          <li className="cursor-pointer" onClick={() => scrollToSection('about')}>about me</li>
+          <li className="cursor-pointer" onClick={() => scrollToSection('about')}>about</li>
           <li className="cursor-pointer" onClick={() => scrollToSection('experience')}>experience</li>
           <li className="cursor-pointer" onClick={() => scrollToSection('papers')}>papers</li>
           <li className="cursor-pointer" onClick={() => scrollToSection('projects')}>projects</li>
