@@ -37,7 +37,7 @@ function Contact() {
         </div>
 
 
-        <form action="https://formsubmit.co/dhylanbu@gmail.com" method="POST" target="_blank"  className="w-full space-y-6  bg-white shadow-md px-8 pb-6 rounded-bl-xl rounded-br-xl justify-center items-center">
+        <form action="https://formsubmit.co/8360668eb4ad933e0bca53e28562db19" method="POST" target="_blank"  className="w-full space-y-6  bg-white shadow-md px-8 pb-6 rounded-bl-xl rounded-br-xl justify-center items-center">
           <div className="font-bold  ">Got A Burning Question?</div>
           <div>
             <label className="block text-sm font-medium text-gray-700">Name</label>
